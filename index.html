@@ -1,0 +1,89 @@
+<!doctype html>
+<!doctype html>
+<lang="vi">
+    <head>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+    <body>
+        <div class="main-div">
+            <img class="img" src="https://raw.githubusercontent.com/zukahai/Confess-Crush/main/img/logi.gif">
+            <p class="question">Ngày Đáng Nhớ Nhất Của 2 Đứa Mình Là Gì Vậy Nhỉ????</p>
+            <p class="dinhDang">Nhập Dùm Theo Định Dạng dd/mm/yyyy nhen chứ lười lắm!!!!!</p>
+            <div class="custom-search">
+                <input type="text" class="custom-search-input" placeholder="Chỗ Này Nhập Đáp Án Này!!!!" id="answer_txt" >
+                
+                <button id="button_submit"class="custom-search-botton" type="submit">Nhập Xong Thì Nhấn Này Này!!!</button>  
+            </div>
+        </div>
+        
+        
+    </body> 
+    <style>
+        .dinhDang{
+            font-size: 12px;
+            color: red;
+        }
+        .question{
+            font-size: 20px;
+        }
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .img{
+            height: 35%;
+            width: 35%;
+        }
+        .custom-search {
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        
+        width: 500px;
+        }
+        .custom-search-input {
+            height: 50px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 100px;
+        padding: 10px 100px 10px 20px; 
+        line-height: 1;
+        box-sizing: border-box;
+        outline: none;
+        }
+        .custom-search-botton {
+        margin-left: 25% !important;
+        width: 50%;
+        height: 50px;
+        margin-top: 20px !important;
+        border: 0;
+        background: #d1095e;
+        color: #fff;
+        outline: none;
+        margin: 0;
+        padding: 0 10px;
+        border-radius: 100px;
+        z-index: 2;
+        }
+    </style>
+   
+    <script>
+    $(document).ready(function(){
+        
+        document.getElementById("button_submit").onclick = function () {
+            
+            var rightAnswer = document.getElementById('answer_txt').value;
+            console.log(rightAnswer);
+            if (rightAnswer==="01/03/2018" || "1/3/2018"){
+                location.href = "./heart.html";
+            }else{
+                console.log("wrog");
+            }
+            
+        };
+        
+    })
+    </script>
+
+</html>
