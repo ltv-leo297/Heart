@@ -7,8 +7,7 @@
     <body>
         <div class="main-div">
             <img class="img" src="https://raw.githubusercontent.com/zukahai/Confess-Crush/main/img/logi.gif">
-            <p class="question">Ngày Đáng Nhớ Nhất Của 2 Đứa Mình Là Gì Vậy Nhỉ????</p>
-            <p class="dinhDang">Nhập Dùm Theo Định Dạng dd/mm/yyyy Nhen, Chứ Lười Lắm!!!!!</p>
+            <p class="question">SDT tui ở trong điện thoại NY tui được lưu là gì??</p>
             <div class="custom-search">
                 <input type="text" class="custom-search-input" placeholder="Chỗ Này Nhập Đáp Án Này!!!!" id="answer_txt" >
                 
@@ -75,7 +74,7 @@
             
             var rightAnswer = document.getElementById('answer_txt').value;
             console.log(rightAnswer);
-            if (rightAnswer==="01/03/2018" || "1/3/2018"){
+            if (rightAnswer.toUpperCase()==="sutunho".toUpperCase()){
                 location.href = "./heart.html";
             }else{
                 console.log("wrog");
